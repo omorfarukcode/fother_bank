@@ -26,6 +26,8 @@ document.getElementById("withdraw-btn").addEventListener("click", function(){
     const balanceElemant = parseFloat(balanceElemantValue);
     // console.log(balanceElemant);
 
+    inputElemant.value = "" ;
+
     if( withdrawAmmount > balanceElemant ){
         alert("Baper bank e Ato Taka Nay")
         return;
@@ -38,8 +40,5 @@ document.getElementById("withdraw-btn").addEventListener("click", function(){
     const newBalance =balanceElemant - withdrawAmmount;
     // console.log(newBalance);
     balanceElemantString.innerText = newBalance ;
-
-
-    inputElemant.value = "" ;
 
 })
