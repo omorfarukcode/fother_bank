@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto">
+    <header>
+      <h2 class="text-5xl font-bold text-center mt-10">
+        Baper <span class="text-orange-600">Bank Khali Korte</span> Aylam !!
+      </h2>
+    </header>
+    <main>
+      <section class="mt-10 max-w-[1080px] mx-auto">
+        <div class="flex justify-center gap-10 text-white">
+          <div class="bg-green-500 py-8 pr-32 pl-10 flex-1 rounded-lg">
+            <h2 class="text-4xl font-semibold mb-3">Deposit</h2>
+            <h3 class="text-3xl">$<span id="deposit-ammount">00</span></h3>
+          </div>
+          <div class="bg-yellow-500 py-8 pr-32 pl-10 flex-1 rounded-lg">
+            <h2 class="text-4xl font-semibold mb-3">Withdraw</h2>
+            <h3 class="text-3xl">$<span id="withdraw-ammount">00</span></h3>
+          </div>
+          <div class="bg-violet-500 py-8 pr-32 pl-10 flex-1 rounded-lg">
+            <h2 class="text-4xl font-semibold mb-3">Balance</h2>
+            <h3 class="text-3xl">$<span id="balance-ammount">100</span></h3>
+          </div>
+        </div>
+      </section>
+      <section class="mt-10 max-w-[1150px] mx-auto">
+        <div class="flex justify-center gap-10 text-white">
+          <div class="bg-fuchsia-500 py-8 pr-32 pl-10 flex-1 rounded-lg">
+            <h2 class="text-4xl font-semibold mb-3">Pleace Deposit</h2>
+            <input
+              id="deposit-field"
+              type="text"
+              class="block py-2 w-3/4 px-4 mt-4 text-black"
+              placeholder="$ Ammount You Want To Deposit  " />
+            <button
+              id="deposit-btn"
+              class="py-2 px-6 font-bold text-lg mt-8 text-white tracking-wider bg-sky-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300">
+              Deposit
+            </button>
+          </div>
+          <div class="bg-sky-500 py-8 pr-32 pl-10 flex-1 rounded-lg">
+            <h2 class="text-4xl font-semibold mb-3">Pleace Withdraw</h2>
+            <input
+              type="text"
+              class="block py-2 w-3/4 px-4 mt-4 text-black"
+              placeholder="$Ammount You Want To Withdraw "
+              id="withdraw-filed" />
+            <button
+              id="withdraw-btn"
+              class="py-2 px-6 font-bold text-lg mt-8 text-white tracking-wider bg-fuchsia-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300">
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+  </body>
+</html>
