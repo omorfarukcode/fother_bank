@@ -6,6 +6,15 @@ document.getElementById("deposit-btn").addEventListener("click", function(){
     const newDipositAmmounte = parseFloat(newDipositeAmmountValue);
     // console.log(typeof newDipositAmmounte);
 
+
+    dipositeFieldString.value = "";
+
+    if(isNaN(newDipositAmmounte)){
+        alert("Enter an amount number");
+        return;
+    }
+
+
     const ammountElemant = document.getElementById("deposit-ammount");
     const preTotalAmountString = ammountElemant.innerText;
     // console.log(typeof preTotalAmount);
@@ -32,6 +41,4 @@ document.getElementById("deposit-btn").addEventListener("click", function(){
     balanceAmmountEleamant.innerText = totalBalanceAmmount ;
 
     
-
-    dipositeFieldString.value = "";
 })

@@ -6,7 +6,16 @@ document.getElementById("withdraw-btn").addEventListener("click", function(){
     const withdrawAmmountString = inputElemant.value;
     // console.log(withdrawAmmountString);
     const withdrawAmmount = parseFloat(withdrawAmmountString);
-    // console.log(typeof withdrawAmmount);
+    console.log(typeof withdrawAmmount);
+
+
+    inputElemant.value = "" ;    
+
+
+    if(isNaN(withdrawAmmount)){
+        alert("Enter an amount number");
+        return;
+    }
 
     const withdrawAmmountElemant = document.getElementById("withdraw-ammount");
     // console.log(withdrawAmmountElemant)
@@ -26,7 +35,7 @@ document.getElementById("withdraw-btn").addEventListener("click", function(){
     const balanceElemant = parseFloat(balanceElemantValue);
     // console.log(balanceElemant);
 
-    inputElemant.value = "" ;
+    
 
     if( withdrawAmmount > balanceElemant ){
         alert("Baper bank e Ato Taka Nay")
